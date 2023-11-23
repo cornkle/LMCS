@@ -21,8 +21,10 @@ def _create_dic(dx, dist, start, nb):
 NAMES = {
     'SM5k': _create_dic(5, 0.25, 5, 35),  # to avoid bias in full wavelet reconstruction, (2) = 0.25 and a minimum of 35 scales is needed.
     'SM5k_sensiTest': _create_dic(5, 0.25, 5, 20),
+    'T_CP4': _create_dic(4.4, 1, 10, 6)
 }
 
 ########## Test case data
 
 TESTDATA = os.path.abspath(os.path.dirname(__file__)) + os.sep + 'testdata' + os.sep + 'sm_testfile.nc'
+TESTDATA_TEMP = os.path.abspath(os.path.dirname(__file__)) + os.sep + 'testdata' + os.sep + 't2_testfile.nc'

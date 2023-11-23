@@ -102,7 +102,7 @@ class landwav(object):
         print('Wavelet coeffs (none or stddev) and power (none, stddev or scale) normed by:', normed, 'Please note: Choose none if value reconstruction is intended.')
 
         #obj = wav.wavelet(self.res, self.dist, self.nb, start=self.start)
-        print('getresh', ge_thresh, 'lethresh', le_thresh)
+
         coeffs, power = self.wobj.calc_coeffs(data, ge_thresh=ge_thresh, fill=fill, le_thresh=le_thresh, power_normed=normed)
 
         self.power = power

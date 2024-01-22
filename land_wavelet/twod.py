@@ -37,7 +37,7 @@ class Mexican_hat():
     def __init__(self):
         # Reconstruction factor $C_{\psi, \delta}$
         self.cpsi = 1. # pi
-        self.cdelta = 3.541  # Empirical reconstruction factor (cf. pycwt package)
+        self.cdelta = 3.541  # Empirical reconstruction factor (cf. pycwt package, Torrence compo)
         self.gamma = 1.43    # Decorrelation factor for time averaging
         self.deltaj0 = 1.40  # Factor for scale averaging
 

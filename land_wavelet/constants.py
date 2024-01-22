@@ -19,8 +19,7 @@ def _create_dic(dx, dist, start, nb):
 # (1) resolution, (2) distance between scales, (3) start scale, (4) number of scales
 
 NAMES = {
-    'SM5k': _create_dic(5, 0.25, 5, 35),  # to avoid bias in full wavelet reconstruction, (2) = 0.25 and a minimum of 35 scales is needed.
-    'SM5k_sensiTest': _create_dic(5, 0.25, 5, 20),
+    'SM5k': _create_dic(5, 0.25, 5, 40),  # to avoid bias in full wavelet reconstruction, (2) = 0.25 and a minimum of 35 scales is needed.
     'T_CP4': _create_dic(4.4, 1, 10, 6)
 }
 
